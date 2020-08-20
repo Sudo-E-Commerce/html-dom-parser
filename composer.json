@@ -1,0 +1,29 @@
+{
+    "name": "sudo/htmldomparser",
+    "description": "Votes Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Giang Hung Viet",
+            "email": "ghvietptit@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Htmldomparser\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Htmldomparser\\Providers\\HtmldomparserServiceProvider"
+            ],
+            "aliases": {
+                "HtmlDomParser": "Sudo\\Htmldomparser\\MyClass\\HtmlDomParser"
+            }
+        }
+    }
+}
